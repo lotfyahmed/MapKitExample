@@ -12,6 +12,10 @@
 		E920951A1CCD051C009790E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92095181CCD051C009790E8 /* Main.storyboard */; };
 		E920951C1CCD051C009790E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E920951B1CCD051C009790E8 /* Assets.xcassets */; };
 		E920951F1CCD051C009790E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E920951D1CCD051C009790E8 /* LaunchScreen.storyboard */; };
+		E9569C9A1CCD15E500615DA2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9569C981CCD15E500615DA2 /* JSON.swift */; };
+		E9569C9B1CCD15E500615DA2 /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = E9569C991CCD15E500615DA2 /* PublicArt.json */; };
+		E9569C9D1CCD1B6E00615DA2 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9569C9C1CCD1B6E00615DA2 /* PlaceAnnotation.swift */; };
+		E9569C9F1CCD22CC00615DA2 /* ViewController+MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9569C9E1CCD22CC00615DA2 /* ViewController+MapDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		E920951B1CCD051C009790E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E920951E1CCD051C009790E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E92095201CCD051C009790E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9569C981CCD15E500615DA2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		E9569C991CCD15E500615DA2 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
+		E9569C9C1CCD1B6E00615DA2 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		E9569C9E1CCD22CC00615DA2 /* ViewController+MapDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+MapDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +64,24 @@
 			children = (
 				E92095141CCD051C009790E8 /* AppDelegate.swift */,
 				E92095161CCD051C009790E8 /* ViewController.swift */,
+				E9569C9E1CCD22CC00615DA2 /* ViewController+MapDelegate.swift */,
+				E9569C9C1CCD1B6E00615DA2 /* PlaceAnnotation.swift */,
 				E92095181CCD051C009790E8 /* Main.storyboard */,
+				E9569C971CCD15C600615DA2 /* Supporting Files */,
+			);
+			path = MapKitExample;
+			sourceTree = "<group>";
+		};
+		E9569C971CCD15C600615DA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9569C981CCD15E500615DA2 /* JSON.swift */,
+				E9569C991CCD15E500615DA2 /* PublicArt.json */,
 				E920951B1CCD051C009790E8 /* Assets.xcassets */,
 				E920951D1CCD051C009790E8 /* LaunchScreen.storyboard */,
 				E92095201CCD051C009790E8 /* Info.plist */,
 			);
-			path = MapKitExample;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9569C9B1CCD15E500615DA2 /* PublicArt.json in Resources */,
 				E920951F1CCD051C009790E8 /* LaunchScreen.storyboard in Resources */,
 				E920951C1CCD051C009790E8 /* Assets.xcassets in Resources */,
 				E920951A1CCD051C009790E8 /* Main.storyboard in Resources */,
@@ -135,7 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9569C9D1CCD1B6E00615DA2 /* PlaceAnnotation.swift in Sources */,
+				E9569C9A1CCD15E500615DA2 /* JSON.swift in Sources */,
 				E92095171CCD051C009790E8 /* ViewController.swift in Sources */,
+				E9569C9F1CCD22CC00615DA2 /* ViewController+MapDelegate.swift in Sources */,
 				E92095151CCD051C009790E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +312,7 @@
 				E92095251CCD051C009790E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
