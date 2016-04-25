@@ -36,4 +36,36 @@ class PlaceAnnotation: NSObject, MKAnnotation {
         mapItem.name = title
         return mapItem
     }
+    
+    class func fromJSON(json:[JSONValue]) -> PlaceAnnotation?{
+        //1
+        var title: String
+        if let titleOrNil = json[16].string{
+            title = titleOrNil
+        }else{
+            title = ""
+        }
+        let locationName = json[12].string
+        let discipline = json[15].string
+        
+        // 2
+        let latitude = (json[18].string! as NSString).doubleValue
+        let longitude = (json[19].string! as NSString).doubleValue
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        // 3
+        return PlaceAnnotation(title: title, locationName: locationName!, discipline: discipline!, coordinate: coordinate)
+    }
+    
+    // pinColor for disciplines: Sculpture, Plaque, Mural, Monument, other
+    func pinColor() -> UIColor  {
+        switch discipline {
+        case "Sculpture", "Plaque":
+            return MKPinAnnotationView.redPinColor()
+        case "Mural", "Monument":
+            return MKPinAnnotationView.purplePinColor()
+        default:
+            return MKPinAnnotationView.greenPinColor()
+        }
+    }
+    
 }
