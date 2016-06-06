@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "25620B217C4B1C3C3945A8121FC20816DA9A521B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "25620B217C4B1C3C3945A8121FC20816DA9A521B" : 0,
+    "B11994B4E5656D5218787434C023374BD3BA0376" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AF3333BB-B0A9-4239-9573-1CB1086AAC45",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "25620B217C4B1C3C3945A8121FC20816DA9A521B" : "MapKitExample\/",
+    "B11994B4E5656D5218787434C023374BD3BA0376" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MapKitExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MapKitExample\/MapKitExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lotfyahmed\/MapKitExample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "25620B217C4B1C3C3945A8121FC20816DA9A521B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lotfyahmed\/TextFieldAndScrolling.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B11994B4E5656D5218787434C023374BD3BA0376"
+    }
+  ]
+}

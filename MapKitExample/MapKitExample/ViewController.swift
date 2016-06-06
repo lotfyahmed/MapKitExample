@@ -36,6 +36,20 @@ class ViewController: UIViewController {
         mapView.addAnnotations(places)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        checkLocationAuthorizationStatus()
+    }
+    // MARK: - location manager to authorize user location for Maps app
+    var locationManager = CLLocationManager()
+    func checkLocationAuthorizationStatus() {
+        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+            mapView.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
     func loadInitialData(){
         let fileName = NSBundle.mainBundle().pathForResource("PublicArt", ofType: "json")
         let data: NSData = NSData(contentsOfFile: fileName!)!
@@ -47,6 +61,7 @@ class ViewController: UIViewController {
             let jsonData = JSONValue.fromObject(jsonObject)?["data"]?.array
             for placeJSON in jsonData!{
                 if let placeJSON = placeJSON.array, place = PlaceAnnotation.fromJSON(placeJSON){
+                    print("\(place.coordinate.latitude) , \(place.coordinate.longitude)")
                     places.append(place)
                 }
             }

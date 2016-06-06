@@ -59,9 +59,9 @@ class PlaceAnnotation: NSObject, MKAnnotation {
     // pinColor for disciplines: Sculpture, Plaque, Mural, Monument, other
     func pinColor() -> UIColor  {
         switch discipline {
-        case "Sculpture", "Plaque":
+        case "Default":
             return MKPinAnnotationView.redPinColor()
-        case "Mural", "Monument":
+        case "Destination":
             return MKPinAnnotationView.purplePinColor()
         default:
             return MKPinAnnotationView.greenPinColor()
